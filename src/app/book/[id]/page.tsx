@@ -194,7 +194,7 @@ export default function BookDetailPage() {
 
       {/* Reviews Section */}
       <div className="mt-12">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
+        <h2 className="text-2xl font-bold text-purple-800 mb-6 font-serif">Customer Reviews</h2>
         
         {bookReviews.length > 0 ? (
           <div className="space-y-6">
@@ -205,8 +205,8 @@ export default function BookDetailPage() {
                     <div className="flex items-center">
                       {renderStars(review.rating)}
                     </div>
-                    <span className="text-sm text-gray-500">•</span>
-                    <span className="text-sm text-gray-600">{formatDate(review.timestamp)}</span>
+                    <span className="text-sm text-purple-500">•</span>
+                    <span className="text-sm text-purple-600">{formatDate(review.timestamp)}</span>
                     {review.verified && (
                       <>
                         <span className="text-sm text-gray-500">•</span>
