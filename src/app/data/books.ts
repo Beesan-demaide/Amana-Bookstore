@@ -874,5 +874,25 @@ export const books: Book[] = [
     reviewCount: 16,
     inStock: true,
     featured: true,
-  }
+  },
+  {
+  id: '46',
+  title: 'JavaScript: The Definitive Guide',
+  author: 'David Flanagan',
+  description: 'An in-depth guide to modern JavaScript, covering ES6+, asynchronous programming, DOM manipulation, and best practices for building web applications.',
+  price: 59.99,
+  image: '/images/book2.jpg',
+  isbn: '978-0596805524',
+  genre: ['Programming', 'Web Development'],
+  tags: ['JavaScript', 'ES6', 'Frontend', 'Backend', 'Coding'],
+  datePublished: '2021-08-10',
+  pages: 720,
+  language: 'English',
+  publisher: 'O\'Reilly Media',
+  rating: 4.7,
+  reviewCount: 45,
+  inStock: true,
+  featured: false,
+}
+
 ];
