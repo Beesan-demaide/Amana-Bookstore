@@ -25,7 +25,7 @@ const BookGrid: React.FC<BookGridProps> = ({ books, onAddToCart }) => {
   const featuredBooks = useMemo(() => books.filter(book => book.featured), [books]);
 
   // Carousel settings for featured books
-  const booksPerPage = 4;
+  const booksPerPage = 3;
   const totalFeaturedPages = Math.ceil(featuredBooks.length / booksPerPage);
   
   // Get current featured books to display
@@ -137,7 +137,7 @@ const BookGrid: React.FC<BookGridProps> = ({ books, onAddToCart }) => {
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-3xl font-bold text-gray-800">Featured Books</h2>
           {totalFeaturedPages > 1 && (
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-10">
               {/* Carousel Indicators */}
               <div className="flex gap-2">
                 {Array.from({ length: totalFeaturedPages }, (_, index) => (
@@ -181,7 +181,7 @@ const BookGrid: React.FC<BookGridProps> = ({ books, onAddToCart }) => {
         
         {/* Featured Books Carousel */}
         <div className="relative">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {currentFeaturedBooks.map(book => (
               <BookCard key={book.id} book={book} onAddToCart={onAddToCart} />
             ))}
